@@ -4,3 +4,6 @@ build/
 out/
 *.iml
 .DS_Store
+# local user config (keep secrets out of the repo)
+config.properties
+.aquatally/
