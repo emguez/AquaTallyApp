@@ -1,16 +1,28 @@
 # AquaTallyApp (Java Desktop)
 
-> **Note:** The AquaTallyApp is currently bundled with a temporary OpenWeather API key so weather features work immediately after cloning.
-> This key will be removed in the near future — after that, you'll need to create your own free OpenWeather account and update `config.properties`.
+A simple fishing utility desktop app built in pure Java (Swing).  
+It fetches current weather information and lets you log catches and fishing spots locally *(logging feature coming soon)*.
 
-A useful fishing utility desktop app built in pure Java (Swing).
-It will fetch weather info and lets you log catches and fishing spots locally (coming soon).
+---
 
 ## Requirements
-- Java 17+ (tested with 21)
-- Internet connection for API lookups
-- SQLite JDBC embedded (no separate DB install needed)
+- **Java** 17+ (tested with 21)
+- **Internet connection** for API lookups
+- **SQLite JDBC** embedded (no separate DB install required)
 
-## Quick Start
-```bash
-./gradlew run
+---
+
+## Configuration
+
+When the bundled **temporary** OpenWeather API key is removed, you’ll need to provide your own.
+
+1. Sign up for a free account at [OpenWeather](https://openweathermap.org/api).
+2. Go to your account dashboard and create an API key.
+3. Create a file named `config.properties` in the **project root** or in the `.aquatally` directory.
+
+**Example:**
+```properties
+# config.properties
+openweather.apiKey=YOUR_API_KEY_HERE
+weather.city=Toronto
+weather.units=imperial
