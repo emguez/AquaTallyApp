@@ -1,7 +1,13 @@
 # AquaTallyApp (Java Desktop)
 
 A simple fishing utility desktop app built in pure Java (Swing).  
-It fetches current weather information and lets you log catches and fishing spots locally *(logging feature coming soon)*.
+It fetches current weather information and lets you log catches by species, weight, leangh  and location*.
+
+---
+
+## 🎥 Demo
+
+[![Watch the demo](assets/demo-thumb.png)](assets/AquaTallyDemo.mov)
 
 ---
 
